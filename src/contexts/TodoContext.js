@@ -1,9 +1,10 @@
 import { useState, createContext, useContext, useEffect } from "react";
+import dummyData from "../components/DummyData";
 
 export const Context = createContext();
 export const useList = () => useContext(Context);
 export default function TodoContext(props) {
-  const [list, setList] = useState();
+  const [list, setList] = useState(dummyData);
   const [filteredList, setFilteredList] = useState([]);
   const [search, setSearch] = useState("");
 

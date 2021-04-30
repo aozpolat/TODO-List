@@ -1,18 +1,16 @@
 import "./App.css";
 import Form from "./components/Form";
+import List from "./components/List";
 import TodoContext from "./contexts/TodoContext";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-      </header>
+      <h1>TODO List</h1>
       <div className="formElements">
         <TodoContext>
           <Form />
+          <List />
         </TodoContext>
       </div>
     </div>
